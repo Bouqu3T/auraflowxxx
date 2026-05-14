@@ -1,0 +1,302 @@
+[
+  {
+    "crystal_id": "C-JIN-001",
+    "name": "白水晶",
+    "color": "白色/透明",
+    "elements": ["金"],
+    "effects": ["净化磁场", "提升专注", "挡煞防小人", "缓解焦虑"],
+    "price_level": "low",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/bai-shui-jing.png"
+  },
+  {
+    "crystal_id": "C-JIN-002",
+    "name": "白阿塞",
+    "color": "白色透明带金光",
+    "elements": ["金"],
+    "effects": ["吸收负能量", "开运提势", "净化磁场", "提升灵性"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/bai-a-sai.png"
+  },
+  {
+    "crystal_id": "C-JIN-003",
+    "name": "金钛晶",
+    "color": "金色/透明带金发丝",
+    "elements": ["金"],
+    "effects": ["招正偏财", "事业", "决断力", "行动力"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/jin-tai-jing.png"
+  },
+  {
+    "crystal_id": "M-JIN-001",
+    "name": "银曜石",
+    "color": "黑底带银色猫眼",
+    "elements": ["金"],
+    "effects": ["吸收负能量", "护身", "辟邪", "缓解失眠", "安神"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/yin-yao-shi.png"
+  },
+  {
+    "crystal_id": "M-JIN-002",
+    "name": "青金石",
+    "color": "藏蓝色带金星",
+    "elements": ["金"],
+    "effects": ["表达力", "化解人际矛盾", "提升洞察力", "安神"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/qing-jin-shi.png"
+  },
+  {
+    "crystal_id": "M-JIN-003",
+    "name": "999足银嵌金砂石",
+    "color": "银色带金砂",
+    "elements": ["金"],
+    "effects": ["招财", "护身", "调节人体磁场", "辟邪"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/zu-yin-jin-sha.png"
+  },
+  {
+    "crystal_id": "C-MU-001",
+    "name": "绿玛瑙",
+    "color": "淡绿色",
+    "elements": ["木"],
+    "effects": ["招正财", "事业", "促进新陈代谢", "提升活力"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/lv-ma-nao.png"
+  },
+  {
+    "crystal_id": "C-MU-002",
+    "name": "绿幽灵",
+    "color": "绿色异象",
+    "elements": ["木"],
+    "effects": ["招正财", "事业", "促进人际和谐", "净化心轮"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/lv-you-ling.png"
+  },
+  {
+    "crystal_id": "C-MU-003",
+    "name": "绿碧玺",
+    "color": "浓绿色冰体",
+    "elements": ["木"],
+    "effects": ["招财", "事业", "化解职场小人", "调和五行"],
+    "price_level": "high",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/lv-bi-xi.png"
+  },
+  {
+    "crystal_id": "M-MU-001",
+    "name": "东陵玉",
+    "color": "淡绿带金沙",
+    "elements": ["木"],
+    "effects": ["行动力", "旺人际", "招贵人", "缓解拖延症"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/dong-ling-yu.png"
+  },
+  {
+    "crystal_id": "M-MU-002",
+    "name": "葡萄石",
+    "color": "嫩绿色带猫眼",
+    "elements": ["木"],
+    "effects": ["缓解焦虑", "舒缓情绪", "安神", "提升气质"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/pu-tao-shi.png"
+  },
+  {
+    "crystal_id": "M-MU-003",
+    "name": "翡翠",
+    "color": "糯种飘绿",
+    "elements": ["木"],
+    "effects": ["护身", "招财", "事业", "养人保平安"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/fei-cui.png"
+  },
+  {
+    "crystal_id": "C-SHUI-001",
+    "name": "蓝玉髓",
+    "color": "淡蓝色",
+    "elements": ["水"],
+    "effects": ["表达力", "护身", "招贵人缘", "辟邪防小人"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/lan-yu-sui.png"
+  },
+  {
+    "crystal_id": "C-SHUI-002",
+    "name": "海蓝宝",
+    "color": "冰种浅蓝",
+    "elements": ["水"],
+    "effects": ["表达力", "缓解焦虑", "护佑出行平安", "逻辑思维"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/hai-lan-bao.png"
+  },
+  {
+    "crystal_id": "C-SHUI-003",
+    "name": "水胆水晶",
+    "color": "透明带流动水胆",
+    "elements": ["水"],
+    "effects": ["招财", "激活智慧", "护身", "净化脉轮"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/shui-dan-shui-jing.png"
+  },
+  {
+    "crystal_id": "M-SHUI-001",
+    "name": "黑曜石",
+    "color": "纯黑冰种",
+    "elements": ["水"],
+    "effects": ["吸收负能量", "护身", "辟邪", "缓解失眠", "安神"],
+    "price_level": "low",
+    "bead_sizes": [12, 14],
+    "image_url": "/mock-images/hei-yao-shi.png"
+  },
+  {
+    "crystal_id": "M-SHUI-002",
+    "name": "蓝虎眼石",
+    "color": "宝蓝色带猫眼",
+    "elements": ["水"],
+    "effects": ["招财", "行动力", "化病排毒", "净化系统"],
+    "price_level": "medium",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/lan-hu-yan.png"
+  },
+  {
+    "crystal_id": "M-SHUI-003",
+    "name": "海纹石",
+    "color": "蓝白海洋纹理",
+    "elements": ["水"],
+    "effects": ["净化脉轮", "化解人际矛盾", "缓解焦虑", "招贵人缘"],
+    "price_level": "high",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/hai-wen-shi.png"
+  },
+  {
+    "crystal_id": "C-HUO-001",
+    "name": "粉晶",
+    "color": "粉色",
+    "elements": ["火"],
+    "effects": ["招桃花", "改善人际关系", "缓解焦虑", "净化心轮"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/fen-jing.png"
+  },
+  {
+    "crystal_id": "C-HUO-002",
+    "name": "紫水晶",
+    "color": "浓紫色",
+    "elements": ["火"],
+    "effects": ["助学业", "开发智慧", "缓解焦虑", "安神"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/zi-shui-jing.png"
+  },
+  {
+    "crystal_id": "C-HUO-003",
+    "name": "粉火水晶",
+    "color": "樱花粉带火彩",
+    "elements": ["火"],
+    "effects": ["招正缘", "提升个人魅力", "治愈情感创伤", "创造力"],
+    "price_level": "high",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/fen-huo-shui-jing.png"
+  },
+  {
+    "crystal_id": "M-HUO-001",
+    "name": "红玛瑙",
+    "color": "正红色",
+    "elements": ["火"],
+    "effects": ["事业", "护身", "提升身体活力", "本命年辟邪"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/hong-ma-nao.png"
+  },
+  {
+    "crystal_id": "M-HUO-002",
+    "name": "石榴石",
+    "color": "酒红冰种",
+    "elements": ["火"],
+    "effects": ["美容养颜", "护身", "改善内分泌", "促进血液循环"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/shi-liu-shi.png"
+  },
+  {
+    "crystal_id": "M-HUO-003",
+    "name": "南红玛瑙",
+    "color": "樱桃红满肉",
+    "elements": ["火"],
+    "effects": ["招财", "事业", "安神", "护身", "保平安"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/nan-hong.png"
+  },
+  {
+    "crystal_id": "C-TU-001",
+    "name": "黄阿塞",
+    "color": "透明带金光",
+    "elements": ["土"],
+    "effects": ["招财守财", "稳定财运", "提升自信", "行动力"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/huang-a-sai.png"
+  },
+  {
+    "crystal_id": "C-TU-002",
+    "name": "黄水晶",
+    "color": "柠檬黄",
+    "elements": ["土"],
+    "effects": ["招财", "事业", "决断力", "行动力"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/huang-shui-jing.png"
+  },
+  {
+    "crystal_id": "C-TU-003",
+    "name": "黄塔晶",
+    "color": "黄透明带塔状色带",
+    "elements": ["土"],
+    "effects": ["招财", "决断力", "缓解焦虑", "提升理性思维"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/huang-ta-jing.png"
+  },
+  {
+    "crystal_id": "M-TU-001",
+    "name": "黄虎眼石",
+    "color": "黄色带猫眼",
+    "elements": ["土"],
+    "effects": ["行动力", "决断力", "招财", "护身"],
+    "price_level": "low",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/huang-hu-yan.png"
+  },
+  {
+    "crystal_id": "M-TU-002",
+    "name": "黄发晶",
+    "color": "黄透明带顺直发丝",
+    "elements": ["土"],
+    "effects": ["招财", "事业", "护身", "净化身体"],
+    "price_level": "medium",
+    "bead_sizes": [8, 10],
+    "image_url": "/mock-images/huang-fa-jing.png"
+  },
+  {
+    "crystal_id": "M-TU-003",
+    "name": "蜜蜡",
+    "color": "鸡油黄满蜜",
+    "elements": ["土"],
+    "effects": ["安神", "护身", "招财", "滋养身体", "保平安"],
+    "price_level": "high",
+    "bead_sizes": [10, 12],
+    "image_url": "/mock-images/mi-la.png"
+  }
+]

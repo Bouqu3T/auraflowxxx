@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// 用户表
+model User {
+  id        String        @id @default(cuid())
+  phone     String        @unique
+  nickname  String?
+  avatar    String?
+  profiles  UserProfile[]
+  orders    Order[]
+  createdAt DateTime      @default(now())
+}
+
+// 用户档案表
+model UserProfile {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id])
+  profileName    String   // 如“自己”“妈妈”
+  birthDate      DateTime // 出生年月日
+  gender         String   // 男/女
+  birthLocation  String   // 出生地区县
+  isDefault      Boolean  @default(false)
+}
+
+// 水晶知识库 (本地预置数据)
+model Crystal {
+  id          String   @id
+  name        String
+  color       String
+  elements    String   // 存储为JSON字符串或逗号分隔，如 "火,土"
+  effects     String   // 如 "招桃花,招财"
+  priceTier   String   // low, medium, high
+  sizes       String   // 珠子尺寸，如 "6,8,10"
+  imageUrl    String   // 本地相对路径
+}
+
+// 订单表
+model Order {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  status      String   // 待付款, 待制作, 已发货, 已完成
+  totalPrice  Float
+  planDetails String   // 序列化存储选中的方案及手串组成
+  address     String
+  contact     String
+  createdAt   DateTime @default(now())
+}

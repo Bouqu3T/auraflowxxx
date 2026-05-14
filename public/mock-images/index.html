@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水晶示例图片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #FAF8F5;
+        }
+        h1 {
+            color: #333333;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-item {
+            text-align: center;
+        }
+        .image-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #E6DED0;
+        }
+        .image-item p {
+            margin-top: 10px;
+            color: #6C6254;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>水晶示例图片</h1>
+    <p>以下是 AuraFlow 应用中使用的水晶示例图片：</p>
+    
+    <div class="image-grid">
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=green%20crystal%20bracelet%20with%20ghost%20pattern&image_size=square_hd" alt="绿幽灵">
+            <p>绿幽灵 (lv-you-ling.png)</p>
+        </div>
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=blue%20aquamarine%20crystal%20bracelet&image_size=square_hd" alt="海蓝宝">
+            <p>海蓝宝 (hai-lan-bao.png)</p>
+        </div>
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=white%20crystal%20bracelet%20clear%20transparent&image_size=square_hd" alt="白水晶">
+            <p>白水晶 (bai-shui-jing.png)</p>
+        </div>
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=green%20agate%20crystal%20bracelet&image_size=square_hd" alt="绿玛瑙">
+            <p>绿玛瑙 (lv-ma-nao.png)</p>
+        </div>
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=white%20crystal%20with%20golden%20light%20bracelet&image_size=square_hd" alt="白阿塞">
+            <p>白阿塞 (bai-a-sai.png)</p>
+        </div>
+        <div class="image-item">
+            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=green%20tourmaline%20crystal%20bracelet&image_size=square_hd" alt="绿碧玺">
+            <p>绿碧玺 (lv-bi-xi.png)</p>
+        </div>
+    </div>
+    
+    <p>这些图片将在应用的三档方案页面中使用。</p>
+</body>
+</html>

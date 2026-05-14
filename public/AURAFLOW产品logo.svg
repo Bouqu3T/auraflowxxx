@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="jadeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4C59A"/>
+      <stop offset="50%" style="stop-color:#BFA478"/>
+      <stop offset="100%" style="stop-color:#9C7C53"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#jadeGradient)"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#FCFAF6" stroke-width="2" opacity="0.3"/>
+  <text x="100" y="95" text-anchor="middle" font-size="32" font-weight="bold" fill="#2B2824" font-family="serif">AURA</text>
+  <text x="100" y="130" text-anchor="middle" font-size="24" fill="#2B2824" font-family="serif">FLOW</text>
+</svg>

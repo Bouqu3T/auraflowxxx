@@ -1,0 +1,454 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #F7F4EE;
+  --paper-white: #FCFAF6;
+  --mist: #F2EFE9;
+  --ink: #2B2824;
+  --tea: #6E655B;
+  --ash: #9D9387;
+  --ink-gray: #5A554D;
+  
+  --jade: #BFA478;
+  --jade-dark: #9C7C53;
+  --jade-light: #D4C59A;
+  
+  --wu-wood: #7C9B76;
+  --wu-fire: #B56D59;
+  --wu-earth: #B79A61;
+  --wu-metal: #A7A9AE;
+  --wu-water: #6F8EA8;
+  
+  --border-ink: #E6DED2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'PingFang SC', 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 东方灵韵系 - 按钮样式 */
+.btn-primary {
+  @apply rounded-full py-3.5 px-6 font-medium transition-all duration-500;
+  background-color: var(--jade-dark);
+  color: #FCFAF6;
+  box-shadow: 0 2px 8px rgba(156, 124, 83, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--jade);
+  box-shadow: 0 4px 12px rgba(191, 164, 120, 0.25);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+  transition: transform 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-secondary {
+  @apply bg-paper-white border border-border-ink rounded-full py-3.5 px-6 font-medium transition-all duration-500 text-tea hover:text-ink;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  border-color: var(--jade);
+  box-shadow: 0 4px 16px rgba(191, 164, 120, 0.1);
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+  transition: transform 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 东方灵韵系 - 卡片样式 */
+.card {
+  @apply bg-paper-white rounded-soft p-5 transition-all duration-500;
+  border: 1px solid var(--border-ink);
+  box-shadow: 0 2px 6px rgba(43, 40, 36, 0.04);
+}
+
+.card-hover:hover {
+  box-shadow: 0 4px 12px rgba(43, 40, 36, 0.06);
+}
+
+.card-selected {
+  @apply border-2 border-jade bg-selected-bg;
+  box-shadow: 0 4px 12px rgba(191, 164, 120, 0.12);
+}
+
+/* 输入框样式 */
+.input {
+  @apply bg-paper-white/80 border border-border-ink rounded-elegant py-3.5 px-4 w-full transition-all duration-300 text-base;
+}
+
+.input:focus {
+  @apply outline-none border-jade;
+  box-shadow: 0 0 0 3px rgba(191, 164, 120, 0.1), 0 2px 8px rgba(191, 164, 120, 0.08);
+}
+
+/* 东方宣纸纹理背景 */
+.bg-xuan {
+  position: relative;
+  background-color: var(--paper);
+}
+
+.bg-xuan::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.018;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 东方山形背景 */
+.bg-mountain {
+  position: relative;
+}
+
+.bg-mountain::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: 
+    radial-gradient(ellipse 60% 40% at 30% 100%, rgba(191, 164, 120, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 50% at 70% 100%, rgba(191, 164, 120, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 云雾光晕背景 */
+.bg-cloud {
+  position: relative;
+}
+
+.bg-cloud::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(252, 250, 246, 0.95) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 20% 30%, rgba(191, 164, 120, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 35% at 80% 20%, rgba(191, 164, 120, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 卷轴进入动画 */
+.scroll-enter {
+  animation: scrollEnter 0.8s ease-out forwards;
+}
+
+@keyframes scrollEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 墨迹展开动画 */
+.ink-spread {
+  animation: inkSpread 0.6s ease-out forwards;
+}
+
+@keyframes inkSpread {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 玉石呼吸动画 */
+.jade-breathe {
+  animation: jadeBreathe 5s ease-in-out infinite;
+}
+
+@keyframes jadeBreathe {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+}
+
+/* 五行色珠子 - 简洁纯色 */
+.bead-wood { background-color: var(--wu-wood); }
+.bead-fire { background-color: var(--wu-fire); }
+.bead-earth { background-color: var(--wu-earth); }
+.bead-metal { background-color: var(--wu-metal); }
+.bead-water { background-color: var(--wu-water); }
+.bead-jade { background-color: var(--jade); }
+
+/* 玉石质感珠子 - 简洁版 */
+.jade-bead {
+  background-color: var(--jade);
+  border-radius: 50%;
+}
+
+/* 印章样式 */
+.seal-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 1.5px solid var(--jade);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--jade-dark);
+  letter-spacing: 0.1em;
+  background: rgba(191, 164, 120, 0.05);
+}
+
+/* 进度珠样式 */
+.progress-bead {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #FFFFFF, var(--border-ink));
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-bead.active {
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 35% 35%, #FFFFFF, var(--jade));
+  box-shadow:
+    0 0 14px rgba(191, 164, 120, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 3px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 3px rgba(191, 164, 120, 0.3);
+  animation: progressJadePulse 4s ease-in-out infinite;
+}
+
+.progress-bead.completed {
+  background: radial-gradient(circle at 35% 35%, #FFFFFF, var(--jade));
+  box-shadow:
+    0 2px 6px rgba(191, 164, 120, 0.2),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 2px rgba(191, 164, 120, 0.2);
+}
+
+@keyframes progressJadePulse {
+  0%, 100% {
+    box-shadow:
+      0 0 10px rgba(191, 164, 120, 0.3),
+      0 2px 6px rgba(0, 0, 0, 0.06),
+      inset 0 1px 2px rgba(255, 255, 255, 0.95);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(191, 164, 120, 0.5),
+      0 3px 10px rgba(0, 0, 0, 0.08),
+      inset 0 1px 3px rgba(255, 255, 255, 0.98);
+  }
+}
+
+/* 进度线 */
+.progress-line {
+  flex: 1;
+  height: 2px;
+  background: var(--border-ink);
+  position: relative;
+}
+
+.progress-line.completed {
+  background: var(--jade);
+}
+
+.progress-line.completed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmerLine 4s ease-in-out infinite;
+}
+
+@keyframes shimmerLine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 细分割线 */
+.divider-xuan {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(191, 164, 120, 0.15), transparent);
+}
+
+/* 标签样式 */
+.tag-xuan {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: rgba(191, 164, 120, 0.06);
+  border-radius: 12px;
+  font-size: 11px;
+  color: var(--tea);
+}
+
+.tag-xuan::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--jade);
+}
+
+/* 五行标签 */
+.tag-wu {
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.tag-wu-wood { background: rgba(124, 155, 118, 0.1); color: var(--wu-wood); }
+.tag-wu-fire { background: rgba(181, 109, 89, 0.1); color: var(--wu-fire); }
+.tag-wu-earth { background: rgba(183, 154, 97, 0.1); color: var(--wu-earth); }
+.tag-wu-metal { background: rgba(167, 169, 174, 0.1); color: var(--wu-metal); }
+.tag-wu-water { background: rgba(111, 142, 168, 0.1); color: var(--wu-water); }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: rgba(191, 164, 120, 0.3); 
+  border-radius: 3px; 
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(191, 164, 120, 0.5); }
+
+/* 选中态选项卡 */
+.option-card {
+  @apply bg-paper-white border border-border-ink rounded-elegant p-4 transition-all duration-500 cursor-pointer;
+}
+
+.option-card:hover {
+  border-color: var(--jade);
+  box-shadow: 0 4px 12px rgba(191, 164, 120, 0.08);
+}
+
+.option-card.selected {
+  @apply border-2 border-jade bg-selected-bg;
+  box-shadow: 
+    0 0 16px rgba(191, 164, 120, 0.12),
+    0 4px 12px rgba(43, 40, 36, 0.05);
+}
+
+/* 印章图标 */
+.stamp-icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--jade);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(191, 164, 120, 0.05);
+}
+
+.stamp-icon::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed var(--jade);
+  border-radius: 4px;
+}
+
+/* 罗盘背景 */
+.compass-bg {
+  position: relative;
+}
+
+.compass-bg::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle, transparent 60%, rgba(191, 164, 120, 0.03) 100%),
+    conic-gradient(
+      from 0deg, 
+      var(--wu-wood) 0deg 72deg, 
+      var(--wu-fire) 72deg 144deg, 
+      var(--wu-earth) 144deg 216deg, 
+      var(--wu-metal) 216deg 288deg, 
+      var(--wu-water) 288deg 360deg
+    );
+  opacity: 0.15;
+  filter: blur(20px);
+}
+
+/* 图表容器 */
+.chart-container {
+  position: relative;
+  padding: 16px;
+  background: var(--paper-white);
+  border-radius: 16px;
+  border: 1px solid var(--border-ink);
+}
+
+/* 报告卡片 */
+.report-card {
+  @apply bg-paper-white rounded-soft p-5 transition-all duration-500;
+  border: 1px solid var(--border-ink);
+  box-shadow: 
+    0 2px 8px rgba(43, 40, 36, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* 方案卡片 */
+.plan-card {
+  @apply bg-paper-white rounded-gentle p-6 transition-all duration-500 relative overflow-hidden;
+  border: 1px solid var(--border-ink);
+}
+
+.plan-card.popular {
+  @apply border-jade bg-gradient-to-b from-selected-bg to-paper-white;
+}
+
+.plan-card.popular::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--jade-dark), var(--jade), var(--jade-light));
+}
